@@ -8,7 +8,7 @@ from discord.ext import commands
 client = commands.Bot(command_prefix = '.')
 channel = client.get_channel("channel id")
 
-filter_test = ["tlqkf","whssk"]
+filter_test = ["시발,존나,새기,새끼"]
 
 @client.event
 async def on_ready():
@@ -18,7 +18,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if '시발' in message.content:
+	if filter_test in message.content:
 		newmsg = message.content[:]
 		await message.delete()
 		newmsg = newmsg.replace("시발","이런")
