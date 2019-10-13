@@ -1,1 +1,1 @@
-worker: python filter.py
+worker: python Filter.py
