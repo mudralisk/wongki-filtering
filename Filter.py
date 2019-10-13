@@ -18,7 +18,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if filter_test in message.content:
+	if '시발' in message.content:
 		newmsg = message.content[:]
 		await message.delete()
 		newmsg = newmsg.replace("시발","이런")
