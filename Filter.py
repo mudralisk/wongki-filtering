@@ -22,6 +22,9 @@ async def on_message(message):
 		newmsg = message.content[:]
 		await message.delete()
 		newmsg = newmsg.replace("시발","이런")
+		newmsg = newmsg.replace("새기","아이")
+		newmsg = newmsg.replace("새끼","아이")
+		newmsg = newmsg.replace("존나","매우")
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
 		await message.channel.send(outputmsg)
