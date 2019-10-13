@@ -20,10 +20,10 @@ async def on_ready():
 async def on_message(message):
 	if '시발' in message.content:
 		newmsg = message.content[:]
+		await message.delete()
 		newmsg = newmsg.replace("시발","이런")
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
-		await message.delete()
 		await message.channel.send(outputmsg)
 
 
