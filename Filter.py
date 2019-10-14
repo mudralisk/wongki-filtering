@@ -28,13 +28,6 @@ async def on_message(message):
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
 		await message.channel.send(outputmsg)
-		
-		
-
-		
-
-		
-
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
