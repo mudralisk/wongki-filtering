@@ -28,16 +28,6 @@ async def on_message(message):
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
 		await message.channel.send(outputmsg)
-	else if '운지' in message.content:
-		newmsg = message.content[:]
-		await message.delete()
-		newmsg = newmsg.replace("운지","중력500배")
-		username = message.author.name
-		outputmsg = username +": "+ newmsg
-		await message.channel.send(outputmsg)
-	else if '일리움' in message.content:
-		outputmsg = "직업이 일리움ㅋㅋㅋ"
-		await message.channel.send(outputmsg)
 		
 		
 
