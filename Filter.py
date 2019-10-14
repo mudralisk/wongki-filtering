@@ -38,6 +38,12 @@ async def on_message(message):
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
 		await message.channel.send(outputmsg)
+		
+@client.event
+async def on_message(message):
+	if '시발' in message.content:
+		await message.channel.send('직업이 일리움ㅋㅋㅋ')
+		
 
 
 access_token = os.environ["BOT_TOKEN"]
