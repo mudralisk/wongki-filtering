@@ -28,6 +28,16 @@ async def on_message(message):
 		username = message.author.name
 		outputmsg = username +": "+ newmsg
 		await message.channel.send(outputmsg)
+		
+@client.event
+async def on_message(message):
+	if '운지' in message.content:
+		newmsg = message.content[:]
+		await message.delete()
+		newmsg = newmsg.replace("운지","중력500배")
+		username = message.author.name
+		outputmsg = username +": "+ newmsg
+		await message.channel.send(outputmsg)
 
 
 access_token = os.environ["BOT_TOKEN"]
