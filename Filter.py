@@ -41,7 +41,7 @@ async def on_message(message):
 		
 @client.event
 async def on_message(message):
-	if '시발' in message.content:
+	if '일리움' in message.content:
 		await message.channel.send('직업이 일리움ㅋㅋㅋ')
 		
 
